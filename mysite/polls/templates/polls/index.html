@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-<!--{% load static %}-->
-    <!--<link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}" />-->
+{% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'polls/css/style.css' %}" />
 <link rel="stylesheet" type="text/css" href="/static/css/style.css" />
 
 </head>
@@ -14,7 +14,7 @@
 
     {% for question in latest_question_list %}
 
-             <!--for question in latest_question_list -->
+             for question in latest_question_list
 
        <li><a href="{% url 'polls:detail' question.id %}">{{ question.question_text }}</a></li>
 
